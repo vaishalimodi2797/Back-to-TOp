@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font Awsome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/image/darwiinfav.png" sizes="36x36">
+
+
+    <title>Back to Top</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Hello, world!</h1>
+    </div>
+
+    <!-- Back to top Button -->
+    <a class="scroll-top" href="#top" id="top" style="display: inline;"><i class="fa fa-angle-up"></i> </a>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        $("#top").hide();
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 200) {
+                jQuery("#top").fadeIn(500);
+            } else {
+                $("#top").fadeOut(500);
+            }
+        });
+        $("#top").click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });
+    </script>
+    
+</body>
+
+</html>
